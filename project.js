@@ -49,10 +49,7 @@ choiceIcon.forEach((element) => {
       youSelected.classList.remove("rock");
     }
     let comp_picked = Math.floor(Math.random() * 3);
-    // console.log(comp_picked);
-    // 0- rock
-    // 1- paper
-    // 2 - scissor
+    
 
     const obj = {
       0: "r",
@@ -66,7 +63,7 @@ choiceIcon.forEach((element) => {
       compSelected.classList.remove("rock");
       compSelected.classList.remove("paper");
     } else if (obj[comp_picked] == "r") {
-      compPicked.src = "./fistIcon.png";
+      compPicked.src = "./rock.png";
       compSelected.classList.add("rock");
       compSelected.classList.remove("scissor");
       compSelected.classList.remove("paper");
